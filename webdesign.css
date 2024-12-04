@@ -1,0 +1,1373 @@
+/* Mobilos nézet */
+@media (max-width: 768px) { 
+    
+    
+    header {
+        font-size: 100px; 
+        text-align: center;
+        padding: 0px; 
+        display: flex; 
+        flex-direction: column; 
+        justify-content: center; 
+        align-items: center; 
+    }
+    
+    footer {
+        display: flex;
+    }
+    header .logo {
+        height: 100px; 
+        width: auto; 
+        display: center; 
+        margin-bottom: -10px; 
+    }
+    
+    h1 {
+        font-size: 30px; 
+        margin-top: 10px; 
+        margin-bottom: -30px; 
+        text-align: center; 
+    }
+    
+    .left-section {
+        display: flex; 
+        align-items: center; 
+        gap: 5px; 
+        margin-right: auto;
+        font-size: 12px;
+        margin-top: -40px;
+    }
+    
+    .left-section img {
+        height: auto;
+        width: 25px; 
+        margin: 0; 
+    }
+    
+    .left-section p {
+        font-size: 0;
+        color: none;
+        margin: 0; 
+    }
+
+
+
+    .right-section {
+        display: flex; 
+        align-items: center; 
+        gap: 5px; 
+        margin-top: -42px; 
+        font-size: 12px; 
+        width: 100%; 
+        justify-content: flex-end; 
+        vertical-align: middle;
+    }
+    
+    .right-section img {
+        height: auto; 
+        width: 20px; 
+        margin: 0; 
+        vertical-align: middle;
+        display: inline-block;
+    }
+
+    #bottom {
+        position: fixed;
+        bottom: 5px;
+        right: 5px;
+        border-radius: 25px; 
+    }
+    
+    button {
+        padding: 0px 2px; 
+        background-color: #efc1ba;
+        color: black;
+        border: none;
+        cursor: pointer;
+        border-radius: 15px; 
+        box-shadow: -4px -4px 6px #fed7d1,
+                    4px 4px 6px #a78782; 
+        font-size: 12px; 
+    }
+    
+    button:hover {
+        background-color: #efc1ba;
+        box-shadow: 1px 1px 1px #fed7d1,
+                    -1px -1px 1px #a78782; 
+    }
+    
+    .dropdown button {
+        background-color: #fff;
+        border: none;
+        width: 20px; 
+        height: 10px; 
+        font-weight: bold;
+        font-size: 1px; 
+        cursor: pointer;
+        border-radius: 3px; 
+        box-shadow: none; 
+        text-align: center;
+    }
+
+    footer {
+        background-image: url("Márvány.jpg");
+        color: black;
+        text-align: center;
+        font-size: 15px;
+        padding: 20px;
+        margin: 10px;
+        margin-top: 1200px;
+    }
+    
+
+
+    .card {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        margin: 10 auto; 
+        margin-top: 900px;
+        position: absolute; 
+        left: 50%; 
+        top: 65%; 
+        transform: translate(-50%, -50%); 
+        width: 150px;
+        height: 150px;
+        background-image: url("Márvány.jpg");
+        display: flex;
+        overflow: hidden;
+        transition: 0.5s ease-in-out; 
+        border-radius: 20px;
+        box-shadow: -6px -6px 10px #ffe8e4,
+                    6px 6px 10px #a78782;
+    }
+    
+    .card:hover {
+        width: 250px;
+        background: #efc1ba;
+        padding: 6px 6px;
+        box-shadow: 2px 2px 2px #ffe8e4,
+                    -2px -2px 2px #a78782;
+        border-radius: 20px;
+        transition: all 0.3s ease;
+    }
+    
+    .card .imgBx {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        position: relative;
+        display: flex; /* Flexbox engedélyezése */
+        justify-content: center; /* Vízszintes középre helyezés */
+        align-items: center; /* Függőleges középre helyezés */
+        width: 150px;
+        height: 150px; /* Magasság (egyezik a szélességgel) */
+        background-image: url("Márvány.jpg");
+        background: #bf808077;
+        padding: 10px;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+    }
+    
+    
+    
+    .card .imsrc {
+        width: 10px;
+        height: 10px;
+        border-radius: 10px;
+    }
+    
+    .card h3 {
+        font-size: 14px;
+        text-align: center;
+        padding: 2px 6px;
+        margin: 2px;
+    }
+    
+    .card h4 {
+        font-size: 10px;
+        text-align: flex;
+        padding: 2px 6px;
+        margin: 0px;
+    }
+    
+    .card p {
+        font-size: 12px;
+        text-align: center;
+        padding: 2px 6px;
+        margin: 4px;
+    }
+    
+    .card li {
+        font-size: 13px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding: 2px 6px;
+        margin: -20px;
+    }
+    
+    .card h2 {
+        font-size: 14px;
+        text-align: center;
+        padding: 2px 6px;
+        margin: 6px;
+    }
+    
+    .card2 {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        margin: 10 auto; /* Margin nullázása, hogy ne befolyásolja a pozícionálást */
+        margin-top: 820px;
+        position: absolute; /* Abszolút pozícionálás a szülőelemhez */
+        left: 50%; /* Vízszintesen a középpontba */
+        top: 110%; /* Függőlegesen a középpontba */
+        transform: translate(-50%, -50%); /* Finomhangolás, hogy pontosan középen legyen */
+        width: 150px;
+        height: 150px;
+        background-image: url("Márvány.jpg");
+        display: flex;
+        overflow: hidden;
+        transition: 0.5s ease-in-out; 
+        border-radius: 20px;
+        box-shadow: -6px -6px 10px #ffe8e4,
+                    6px 6px 10px #a78782;
+    }
+    
+    .card2:hover {
+        width: 250px;
+        background: #efc1ba;
+        padding: 6px 6px;
+        box-shadow: 2px 2px 2px #ffe8e4,
+                    -2px -2px 2px #a78782;
+        border-radius: 20px;
+        transition: all 0.3s ease;
+    }
+    
+    .card2 .imgBx2 {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        position: relative;
+        display: flex; /* Flexbox engedélyezése */
+        justify-content: center; /* Vízszintes középre helyezés */
+        align-items: center; /* Függőleges középre helyezés */
+        width: 150px;
+        height: 150px; /* Magasság (egyezik a szélességgel) */
+        background-image: url("Márvány.jpg");
+        background: #bf808077;
+        padding: 2px 55px;
+        border-radius: 20px;
+        transition: all 0.3s ease;
+    }
+    
+    
+    
+    .card2 .imsrc {
+        width: -10px;
+        height: -10px;
+        border-radius: 10px;
+    }
+    
+    .card2 h3 {
+        font-size: 14px;
+        text-align: center;
+        padding: 2px 6px;
+        margin: 2px;
+    }
+    
+    .card2 h4 {
+        font-size: 10px;
+        text-align: flex;
+        padding: 2px 6px;
+        margin: 0px;
+    }
+    
+    .card2 p {
+        font-size: 12px;
+        text-align: center;
+        padding: 2px 6px;
+        margin: 4px;
+    }
+    
+    .card2 li {
+        font-size: 13px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding: 2px 6px;
+        margin: -20px;
+    }
+    
+    .card2 h2 {
+        font-size: 12px;
+        text-align: center;
+        padding: 2px 6px;
+        margin: 6px;
+    }
+    
+    .card3 {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        margin: 10px auto; /* Margin nullázása, hogy ne befolyásolja a pozícionálást */
+        margin-top: 740px;
+        position: absolute; /* Abszolút pozícionálás a szülőelemhez */
+        left: 50%; /* Vízszintesen a középpontba */
+        top: 155%; /* Függőlegesen a középpontba */
+        transform: translate(-50%, -50%); /* Finomhangolás, hogy pontosan középen legyen */
+        width: 150px;
+        height: 150px;
+        background-image: url("Márvány.jpg");
+        display: flex;
+        overflow: hidden;
+        transition: 0.5s ease-in-out; 
+        border-radius: 20px;
+        box-shadow: -6px -6px 10px #ffe8e4,
+                    6px 6px 10px #a78782;
+    }
+    
+    .card3:hover {
+        width: 250px;
+        background: #efc1ba;
+        padding: 6px 6px;
+        box-shadow: 2px 2px 2px #ffe8e4,
+                    -2px -2px 2px #a78782;
+        border-radius: 20px;
+        transition: all 0.3s ease;
+    }
+    
+    .card3 .imgBx3 {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        position: relative;
+        display: flex; /* Flexbox engedélyezése */
+        justify-content: center; /* Vízszintes középre helyezés */
+        align-items: center; /* Függőleges középre helyezés */
+        width: 140px;
+        height: 140px; /* Magasság (egyezik a szélességgel) */
+        background-image: url("Márvány.jpg");
+        background: #bf808077;
+        padding: 10px;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+    }
+    
+    
+    
+    .card3 .imsrc {
+        width: 10px;
+        height: 10px;
+        border-radius: 10px;
+    }
+    
+    .card3 h3 {
+        font-size: 14px;
+        text-align: center;
+        padding: 2px 6px;
+        margin: 2px;
+    }
+    
+    
+    .card3 p {
+        font-size: 12px;
+        text-align: center;
+        padding: 2px 6px;
+        margin: 4px;
+    }
+    
+    
+    .card3 h2 {
+        font-size: 14px;
+        text-align: center;
+        padding: 2px 6px;
+        margin: 6px;
+    }
+    
+    .card4 {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        margin: 10px auto; /* Margin nullázása, hogy ne befolyásolja a pozícionálást */
+        margin-top: 660px;
+        position: absolute; /* Abszolút pozícionálás a szülőelemhez */
+        left: 50%; /* Vízszintesen a középpontba */
+        top: 200%; /* Függőlegesen a középpontba */
+        transform: translate(-50%, -50%); /* Finomhangolás, hogy pontosan középen legyen */
+        width: 150px;
+        height: 150px;
+        background-image: url("Márvány.jpg");
+        display: flex;
+        overflow: hidden;
+        transition: 0.5s ease-in-out; 
+        border-radius: 20px;
+        box-shadow: -6px -6px 10px #ffe8e4,
+                    6px 6px 10px #a78782;
+    }
+    
+    .card4:hover {
+        width: 250px;
+        background: #efc1ba;
+        padding: 6px 6px;
+        box-shadow: 2px 2px 2px #ffe8e4,
+                    -2px -2px 2px #a78782;
+        border-radius: 20px;
+        transition: all 0.3s ease;
+    }
+    
+    .card4 .imgBx4 {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        position: relative;
+        display: flex; /* Flexbox engedélyezése */
+        justify-content: center; /* Vízszintes középre helyezés */
+        align-items: center; /* Függőleges középre helyezés */
+        width: 140px;
+        height: 140px; /* Magasság (egyezik a szélességgel) */
+        background-image: url("Márvány.jpg");
+        background: #bf808077;
+        padding: 10px;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+    }
+    
+    
+    
+    .card4 .imsrc {
+        width: 10px;
+        height: 10px;
+        border-radius: 10px;
+    }
+    
+    .card4 h3 {
+        font-size: 14px;
+        text-align: center;
+        padding: 2px 6px;
+        margin: 2px;
+    }
+    
+    
+    .card4 p {
+        font-size: 12px;
+        text-align: center;
+        padding: 2px 6px;
+        margin: 4px;
+    }
+    
+   
+    
+    .card4 h2 {
+        font-size: 14px;
+        text-align: center;
+        padding: 2px 6px;
+        margin: 6px;
+    }
+    
+    .card5 {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        margin: 10px auto; /* Margin nullázása, hogy ne befolyásolja a pozícionálást */
+        margin-top: 580px;
+        position: absolute; /* Abszolút pozícionálás a szülőelemhez */
+        left: 50%; /* Vízszintesen a középpontba */
+        top: 245%; /* Függőlegesen a középpontba */
+        transform: translate(-50%, -50%); /* Finomhangolás, hogy pontosan középen legyen */
+        width: 150px;
+        height: 150px;
+        background-image: url("Márvány.jpg");
+        display: flex;
+        overflow: hidden;
+        transition: 0.5s ease-in-out; 
+        border-radius: 20px;
+        box-shadow: -6px -6px 10px #ffe8e4,
+                    6px 6px 10px #a78782;
+    }
+    
+    .card5:hover {
+        width: 250px;
+        background: #efc1ba;
+        padding: -15px -15px;
+        box-shadow: 2px 2px 2px #ffe8e4,
+                    -2px -2px 2px #a78782;
+        border-radius: 20px;
+        transition: all 0.3s ease;
+    }
+    
+    .card5 .imgBx5 {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        position: relative;
+        display: flex; /* Flexbox engedélyezése */
+        justify-content: center; /* Vízszintes középre helyezés */
+        align-items: center; /* Függőleges középre helyezés */
+        width: 140px;
+        height: 140px; /* Magasság (egyezik a szélességgel) */
+        background-image: url("Márvány.jpg");
+        background: #bf808077;
+        padding: 10px;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+    }
+    
+    
+    
+    .card5 .imsrc {
+        width: 30px;
+        height: 30px;
+        border-radius: 10px;
+    }
+    
+    .card5 h3 {
+        font-size: 14px;
+        text-align: center;
+        padding: 2px 6px;
+        margin: 2px;
+    }
+    
+    
+    .card5 p {
+        font-size: 12px;
+        text-align: center;
+        padding: 2px 6px;
+        margin: 4px;
+    }
+    
+   
+    
+    .card5 h2 {
+        font-size: 14px;
+        text-align: center;
+        padding: 2px 6px;
+        margin: 6px;
+    }
+    
+
+    .card6 {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        margin: 10px auto; /* Margin nullázása, hogy ne befolyásolja a pozícionálást */
+        margin-top: 500px;
+        position: absolute; /* Abszolút pozícionálás a szülőelemhez */
+        left: 50%; /* Vízszintesen a középpontba */
+        top: 290%; /* Függőlegesen a középpontba */
+        transform: translate(-50%, -50%); /* Finomhangolás, hogy pontosan középen legyen */
+        width: 150px;
+        height: 150px;
+        background-image: url("Márvány.jpg");
+        display: flex;
+        overflow: hidden;
+        transition: 0.5s ease-in-out; 
+        border-radius: 20px;
+        box-shadow: -6px -6px 10px #ffe8e4,
+                    6px 6px 10px #a78782;
+    }
+    
+    .card6:hover {
+        width: 250px;
+        background: #efc1ba;
+        padding: -20px -20px;
+        box-shadow: 2px 2px 2px #ffe8e4,
+                    -2px -2px 2px #a78782;
+        border-radius: 20px;
+        transition: all 0.3s ease;
+    }
+    
+    .card6 .imgBx6 {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        position: relative;
+        display: flex; /* Flexbox engedélyezése */
+        justify-content: center; /* Vízszintes középre helyezés */
+        align-items: center; /* Függőleges középre helyezés */
+        width: 140px; /* Kisebb szélesség */
+        height: 140px; /* Kisebb magasság */
+        background-image: url("Márvány.jpg");
+        background: #bf808077;
+        padding: 10px; /* Csökkentett padding */
+        border-radius: 10px; /* Kisebb lekerekítés */
+        transition: all 0.3s ease;
+    }
+    
+    
+    .card6 .imsrc {
+        width: 30px; /* Kisebb szélesség */
+        height: 30px; /* Kisebb magasság */
+        border-radius: 10px; /* Kisebb lekerekítés */
+    }
+    
+    
+    .card6 h3 {
+        font-size: 14px;
+        text-align: center;
+        padding: 2px 6px;
+        margin: 2px;
+    }
+    
+    
+    .card6 p {
+        font-size: 12px;
+        text-align: center;
+        padding: 2px 6px;
+        margin: 4px;
+    }
+    
+   
+    
+    .card6 h2 {
+        font-size: 14px;
+        text-align: center;
+        padding: 2px 6px;
+        margin: 6px;
+    }
+    
+
+} 
+    
+
+
+    
+    .main {
+        padding: 5px; /* Szűkített padding a szűkebb képernyőhöz */
+    }
+
+    .responsive-image {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        width: 80%; /* A képek a kijelző szélességének 80%-át foglalják el */
+        max-width: 200px; /* Maximális szélesség: 150px */
+        height: auto;
+        display: center;
+        margin: 5px auto; /* Középre igazítás */
+    }
+
+    figure {
+        margin: 10px auto;
+        text-align: center; /* Középre igazított képaláírás */
+    }
+
+    figure img {
+        max-width: 50%; /* Kisebb szélesség a képeknek */
+        height: auto;
+    }
+
+    /* További mobilos stílusok */
+    body {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        font-size: 12px; /* Mobilbarát betűméret */
+        padding: 0;
+        margin: 0;
+       
+    }
+   
+
+  
+
+/* Laptop nézet és nagyobb képernyők (1024px és nagyobb) */
+@media (min-width: 1024px) {
+    header {
+        background-image: url("Márvány.jpg");
+        color: black;
+        font-weight: 1000;
+        font-size: 100px;
+        display: center; /* Flexbox a logó és a cím rendezéséhez */
+        align-items: center; /* Függőleges középre igazítás */
+        justify-content: flex-start; /* A logó bal oldalon marad */
+        padding: 10px 20px;
+    }
+
+    .header-top {
+        display: center; /* Flexbox a logó és a h1 elrendezéséhez */
+        align-items: center; /* Középre igazítás vertikálisan */
+        justify-content: center; /* Balra igazítás a logónak és a címnek */
+        width: 100%; /* Teljes szélesség */
+        gap: 5px; /* Távolság a logó és a h1 között */
+    }
+
+    header .logo {
+        height: 200px; /* A logó magassága */
+        width: auto; /* Arányos szélesség */
+        margin-right: -30px; /* Hézag a logó és a cím között */
+        display: inline-block; /* Azonos sorban tartja a logóval */
+        vertical-align: middle;
+    }
+    
+    h1 {
+        font-size: 70px; /* A cím fontmérete */
+        margin: 0; /* Hézagok eltávolítása */
+        display: inline-block; /* Azonos sorban tartja a logóval */
+        text-align: center; /* A cím balra igazítása */
+        flex-grow: 1; /* A címsor kitölti a fennmaradó helyet */
+    }
+    
+    .címsor1 {
+        font-family: 'English', sans-serif;
+        font-weight: 1000;
+        color: black;
+        text-align: center;
+        font-size: 32px;
+    }
+
+    .left-section {
+        display: flex; /* Flexbox az `img` és `p` egymás mellé rendezéséhez */
+        align-items: center; /* Függőleges középre igazítás */
+        gap: 10px; /* Távolság az `img` és a `p` között */
+        margin-top: 40px; /* Távolság a `header-top` alatt */
+        font-size: 12px; /* Betűméret */
+        width: 100%; /* Teljes szélesség */
+        justify-content: flex-start; /* Balra igazítás */
+        vertical-align: middle;
+    }
+    
+    .left-section img {
+        height: auto; /* Magasság automatikus */
+        width: 40px; /* Szélesség fixen 40px */
+        margin: 0; /* Margók eltávolítása */
+        vertical-align: middle;
+        display: inline-block;
+    }
+    
+    .left-section p {
+        font-size: 15px; /* Betűméret */
+        color: black; /* Szöveg színe */
+        margin: 0; /* Margók eltávolítása */
+        vertical-align: middle;
+        display: inline-block;
+    }
+
+
+
+    .right-section {
+        display: flex; /* Flexbox az `img` és `p` egymás mellé rendezéséhez */
+        align-items: center; /* Függőleges középre igazítás */
+        gap: 10px; /* Távolság az `img` és a `p` között */
+        margin-top: -50px; /* Távolság a `header-top` alatt */
+        font-size: 12px; /* Betűméret */
+        width: 100%; /* Teljes szélesség */
+        justify-content: flex-end; /* Balra igazítás */
+        vertical-align: middle;
+    }
+    
+    .right-section img {
+        height: auto; /* Magasság automatikus */
+        width: 35px; /* Szélesség fixen 40px */
+        margin: 0; /* Margók eltávolítása */
+        vertical-align: middle;
+        display: inline-block;
+    }
+
+    #bottom {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        border-radius: 100px;
+    }
+    
+    
+    button {
+        padding: 1px 20px;
+        background-color: #efc1ba;
+        color: black;
+        border: none;
+        cursor: pointer;
+        border-radius: 25px;
+        box-shadow: -6px -6px 10px #fed7d1,
+                    6px 6px 10px #a78782;
+    
+    }
+    
+    button:hover {
+        background-color: #efc1ba;
+        box-shadow: 2px 2px 2px #fed7d1,
+                    -2px -2px 2px #a78782;
+    }
+    
+    
+    .dropdown button {
+        background-color: #fff;
+        border: none;
+        width: 120px;
+        height: 40px;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 5px;
+        box-shadow: white;
+        text-align: center; 
+    }
+    
+
+    footer {
+        background-image: url("Márvány.jpg");
+        color: black;
+        text-align: center;
+        font-size: 15px;
+        padding: 20px;
+        margin: 10px; 
+    }
+
+
+    .card {
+        margin: 30px;
+        margin-top: 40px;
+        position: relative;
+        width: 250px;
+        height: 250px;
+        background-image: url("Márvány.jpg");
+        display: flex;
+        overflow: hidden;
+        transition: 0,5s ease-in-out;
+        border-radius: 20px;
+        box-shadow: -6px -6px 10px #ffe8e4,
+                        6px 6px 10px #a78782;
+                        
+    }
+    
+    .card:hover {
+        width: 450px;
+        background: #efc1ba;
+        padding: 2px 2px;
+        box-shadow: 2px 2px 2px #ffe8e4,
+                    -2px -2px 2px #a78782;
+        border-radius: 20px;
+        transition: all 0.3s ease;
+    }
+    
+    .card .imgBx {
+        position: relative;
+        min-width: 250px;
+        background-image: url("Márvány.jpg");
+        background:#bf808077;
+        padding: 2px 2px;
+        border-radius: 20px;
+        transition: all 0.3s ease;
+        
+    }
+    
+    .card .imsrc {
+        width: 20px;
+        height: 20px;
+        border-radius: 20px;
+    }
+    
+    .card h3 {
+        font-size: 22px;
+        text-align: center;
+        padding: 2px 6px;
+        margin: 3px;
+    }
+    .card h4 {
+        font-size: 18px;
+        text-align: flex;
+        padding: 2px 6px;
+        margin: 0px;
+    }
+    .card p {
+        font-size: 14px;
+        text-align: center;
+        padding: 2px 6px;
+        margin: 12px;
+    }
+    
+    .card li {
+        font-size: 13px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding: 2px 6px;
+        margin: -20px;
+    }
+    
+    .card h2 {
+        font-size: 22px;
+        text-align: center;
+        padding: 2px 6px;
+        margin: 40px;
+    }
+    
+    
+    
+    
+    
+    
+    .card2 {
+        margin: 30px;
+        position: relative;
+        width: 250px;
+        height: 250px;
+        background-image: url("Márvány.jpg");
+        display: flex;
+        overflow: hidden;
+        transition: 0,5s ease-in-out;
+        border-radius: 20px;
+        box-shadow: -6px -6px 10px #ffe8e4,
+                        6px 6px 10px #a78782;
+                        
+    }
+    
+    .card2:hover {
+        width: 450px;
+        background: #efc1ba;
+        padding: 2px 2px;
+        box-shadow: 2px 2px 2px #ffe8e4,
+                    -2px -2px 2px #a78782;
+        border-radius: 20px;
+        transition: all 0.3s ease;
+    }
+    
+    .card2 .imgBx2 {
+        position: relative;
+        min-width: 250px;
+        background-image: url("Márvány.jpg");
+        background:#bf808077;
+        padding: 2px 2px;
+        border-radius: 20px;
+        transition: all 0.3s ease;
+        
+    }
+    
+    .card2 .imsrc {
+        width: 20px;
+        height: 20px;
+        border-radius: 20px;
+    }
+    
+    .card2 h3 {
+        font-size: 22px;
+        text-align: center;
+        padding: 2px 6px;
+        margin: 3px;
+    }
+    .card2 h4 {
+        font-size: 18px;
+        text-align: flex;
+        padding: 2px 6px;
+        margin: 0px;
+    }
+    .card2 p {
+        font-size: 14px;
+        text-align: center;
+        padding: 2px 6px;
+        margin: 12px;
+    }
+    
+    .card2 li {
+        font-size: 13px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding: 2px 6px;
+        margin: -20px;
+    }
+    
+    .card2 h2 {
+        font-size: 22px;
+        text-align: center;
+        padding: 2px 6px;
+        margin: 40px;
+    }
+    
+    
+    
+    
+    
+    .card3 {
+        margin: 15px;
+        margin-top: 620px;
+        position: absolute; /* Pozíciót relatívan helyett abszolút módosítjuk */
+        right: 20px; /* Az elem távolsága a jobb széltől */
+        top: 50%; /* Az elem középre igazítása a függőleges tengelyen */
+        transform: translateY(-50%); /* A középre igazítás finomhangolása */
+        width: 250px;
+        height: 250px;
+        background-image: url("Márvány.jpg");
+        display: flex;
+        overflow: hidden;
+        transition: 0.5s ease-in-out; 
+        border-radius: 20px;
+        box-shadow: -6px -6px 10px #ffe8e4,
+                    6px 6px 10px #a78782;
+    }
+    
+    .card3:hover {
+        width: 450px;
+        background: #efc1ba;
+        padding: 2px 2px;
+        box-shadow: 2px 2px 2px #ffe8e4,
+                    -2px -2px 2px #a78782;
+        border-radius: 20px;
+        transition: all 0.3s ease;
+    }
+    
+    .card3 .imgBx3 {
+        position: relative;
+        min-width: 250px;
+        background-image: url("Márvány.jpg");
+        background: #bf808077;
+        padding: 2px 2px;
+        border-radius: 20px;
+        transition: all 0.3s ease;
+    }
+    
+    .card3 .imsrc {
+        width: 20px;
+        height: 20px;
+        border-radius: 20px;
+    }
+    
+    .card3 h3 {
+        font-size: 22px;
+        text-align: center;
+        padding: 2px 6px;
+        margin: 3px;
+    }
+   
+    
+    .card3 p {
+        font-size: 14px;
+        text-align: center;
+        padding: 2px 6px;
+        margin: 12px;
+    }
+    
+    
+    
+    .card3 h2 {
+        font-size: 22px;
+        text-align: center;
+        padding: 2px 6px;
+        margin: 40px;
+    }
+    
+    
+    
+    
+    
+    
+    .card4 {
+        margin: 15px;
+        margin-top: 900px;
+        position: absolute; /* Pozíciót relatívan helyett abszolút módosítjuk */
+        right: 20px; /* Az elem távolsága a jobb széltől */
+        top: 50%; /* Az elem középre igazítása a függőleges tengelyen */
+        transform: translateY(-50%); /* A középre igazítás finomhangolása */
+        width: 250px;
+        height: 250px;
+        background-image: url("Márvány.jpg");
+        display: flex;
+        overflow: hidden;
+        transition: 0.5s ease-in-out; 
+        border-radius: 20px;
+        box-shadow: -6px -6px 10px #ffe8e4,
+                    6px 6px 10px #a78782;
+    }
+    
+    .card4:hover {
+        width: 450px;
+        background: #efc1ba;
+        padding: 2px 2px;
+        box-shadow: 2px 2px 2px #ffe8e4,
+                    -2px -2px 2px #a78782;
+        border-radius: 20px;
+        transition: all 0.3s ease;
+    }
+    
+    .card4 .imgBx4 {
+        position: relative;
+        min-width: 250px;
+        background-image: url("Márvány.jpg");
+        background: #bf808077;
+        padding: 2px 2px;
+        border-radius: 20px;
+        transition: all 0.3s ease;
+    }
+    
+    .card4 .imsrc {
+        width: 20px;
+        height: 20px;
+        border-radius: 20px;
+    }
+    
+    .card4 h3 {
+        font-size: 22px;
+        text-align: center;
+        padding: 2px 6px;
+        margin: 3px;
+    }
+    
+    
+    
+    .card4 p {
+        font-size: 14px;
+        text-align: center;
+        padding: 2px 6px;
+        margin: 12px;
+    }
+    
+    
+    
+    .card4 h2 {
+        font-size: 22px;
+        text-align: center;
+        padding: 2px 6px;
+        margin: 40px;
+    }
+    
+    
+    
+    
+    
+    
+    .card5 {
+        margin: 0; /* Margin nullázása, hogy ne befolyásolja a pozícionálást */
+        margin-top: 620px;
+        position: absolute; /* Abszolút pozícionálás a szülőelemhez */
+        left: 50%; /* Vízszintesen a középpontba */
+        top: 50%; /* Függőlegesen a középpontba */
+        transform: translate(-50%, -50%); /* Finomhangolás, hogy pontosan középen legyen */
+        width: 250px;
+        height: 250px;
+        background-image: url("Márvány.jpg");
+        display: flex;
+        overflow: hidden;
+        transition: 0.5s ease-in-out; 
+        border-radius: 20px;
+        box-shadow: -6px -6px 10px #ffe8e4,
+                    6px 6px 10px #a78782;
+    }
+    
+    .card5:hover {
+        width: 450px;
+        background: #efc1ba;
+        padding: 2px 2px;
+        box-shadow: 2px 2px 2px #ffe8e4,
+                    -2px -2px 2px #a78782;
+        border-radius: 20px;
+        transition: all 0.3s ease;
+    }
+    
+    .card5 .imgBx5 {
+        position: relative;
+        display: flex; /* Flexbox engedélyezése */
+        justify-content: center; /* Vízszintes középre helyezés */
+        align-items: center; /* Függőleges középre helyezés */
+        width: 250px;
+        height: 250px; /* Magasság (egyezik a szélességgel) */
+        background-image: url("Márvány.jpg");
+        background: #bf808077;
+        padding: 2px 2px;
+        border-radius: 20px;
+        transition: all 0.3s ease;
+    }
+    
+    
+    
+    .card5 .imsrc {
+        width: 20px;
+        height: 20px;
+        border-radius: 20px;
+    }
+    
+    .card5 h3 {
+        font-size: 22px;
+        text-align: center;
+        padding: 2px 6px;
+        margin: 3px;
+    }
+    
+    
+    
+    .card5 p {
+        font-size: 14px;
+        text-align: center;
+        padding: 2px 6px;
+        margin: 12px;
+    }
+    
+   
+    .card5 h2 {
+        font-size: 22px;
+        text-align: center;
+        padding: 2px 6px;
+        margin: 40px;
+    }
+    
+
+
+
+     
+    .card6 {
+        margin: 0; /* Margin nullázása, hogy ne befolyásolja a pozícionálást */
+        margin-top: 900px;
+        position: absolute; /* Abszolút pozícionálás a szülőelemhez */
+        left: 50%; /* Vízszintesen a középpontba */
+        top: 50%; /* Függőlegesen a középpontba */
+        transform: translate(-50%, -50%); /* Finomhangolás, hogy pontosan középen legyen */
+        width: 250px;
+        height: 250px;
+        background-image: url("Márvány.jpg");
+        display: flex;
+        overflow: hidden;
+        transition: 0.5s ease-in-out; 
+        border-radius: 20px;
+        box-shadow: -6px -6px 10px #ffe8e4,
+                    6px 6px 10px #a78782;
+    }
+    
+    .card6:hover {
+        width: 450px;
+        background: #efc1ba;
+        padding: 2px 2px;
+        box-shadow: 2px 2px 2px #ffe8e4,
+                    -2px -2px 2px #a78782;
+        border-radius: 20px;
+        transition: all 0.3s ease;
+    }
+    
+    .card6 .imgBx6 {
+        position: relative;
+        display: flex; /* Flexbox engedélyezése */
+        justify-content: center; /* Vízszintes középre helyezés */
+        align-items: center; /* Függőleges középre helyezés */
+        width: 250px;
+        height: 250px; /* Magasság (egyezik a szélességgel) */
+        background-image: url("Márvány.jpg");
+        background: #bf808077;
+        padding: 2px 45px;
+        border-radius: 20px;
+        transition: all 0.3s ease;
+       
+    }
+    
+    
+    
+    .card6 .imsrc {
+        width: 20px;
+        height: 20px;
+        border-radius: 20px;
+    }
+    
+    .card6 h3 {
+        font-size: 22px;
+        text-align: center;
+        padding: 2px 6px;
+        margin: 3px;
+    }
+    
+    
+    
+    .card6 p {
+        font-size: 14px;
+        text-align: center;
+        padding: 2px 6px;
+        margin: 12px;
+    }
+    
+   
+    .card6 h2 {
+        font-size: 18px;
+        text-align: center;
+        padding: 2px 6px;
+        margin: 40px;
+    }
+    
+   /* Általános stílusok */
+header {
+    background-image: url("Márvány.jpg");
+    color: black;
+    font-weight: 1000;
+    font-size: 80px;
+    display: flex; /* Flexbox a logó és a cím rendezéséhez */
+    align-items: center; /* Függőleges középre igazítás */
+    justify-content: center; /* A logó bal oldalon marad */
+    padding: 20px 30px;
+}
+
+body {
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #efc1ba;
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    
+}
+
+
+header, nav, section {
+    padding: 10px;
+    margin: 10px;
+}
+
+.head {
+    display: inline;
+    color: black;
+    text-align: center;
+    font-weight: 1000;
+    font-size: 30px;
+}
+
+.head p {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 100px;
+}
+
+.head img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+figure {
+    margin: 10px auto;
+    text-align: center;
+}
+
+figure img {
+    width: 200px; /* Fix szélesség */
+    height: auto; /* Arányos magasság */
+}
+    
+}
+
+/* Általános stílusok */
+header {
+    background-image: url("Márvány.jpg");
+    color: black;
+    font-weight: 1000;
+    font-size: 80px;
+    display: flex; /* Flexbox a logó és a cím rendezéséhez */
+    align-items: center; /* Függőleges középre igazítás */
+    justify-content: center; /* A logó bal oldalon marad */
+    padding: 20px 30px;
+}
+
+body {
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #efc1ba;
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    
+}
+
+
+header, nav, section {
+    padding: 10px;
+    margin: 10px;
+}
+
+.head {
+    display: inline;
+    color: black;
+    text-align: center;
+    font-weight: 1000;
+    font-size: 30px;
+}
+
+.head p {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 100px;
+}
+
+.head img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+figure {
+    margin: 10px auto;
+    text-align: center;
+}
+
+figure img {
+    width: 200px; /* Fix szélesség */
+    height: auto; /* Arányos magasság */
+}
+   
